@@ -58,6 +58,7 @@ dbetapoisson <- function(x, a, b, lambda = 1) {
 #'     M function with parameters \eqn{a} and \eqn{b} evaluated at
 #'     \eqn{z}.
 #'
+#' @export
 kummers_m <- function(a, b, z) {
     .Fortran("KUMMERSM",
         ReA = Re(a), ImA = Im(a),
